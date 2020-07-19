@@ -20,7 +20,7 @@ app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
 setInterval(function() {
-    http.get(`http://rembot.herokuapp.com/`);
+    http.get(`https://rememoriesbot.herokuapp.com/`);
 }, 300000);
 
 client.on('ready', () => {
@@ -52,7 +52,7 @@ client.on('message', async (message) =>{
   }
 });
 
-//AUDIT LOG SCRIPTS BELOW HERE 
+//AUDIT LOG SCRIPTS BELOW HERE
 client.on('messageDelete', async message => {
 	// ignore direct messages
 	if (!message.guild) return;
