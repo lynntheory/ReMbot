@@ -8,17 +8,12 @@ const menu = require('./menu.js');
 const role = require('./role.js');
 const website = require('./website.js');
 
-
-
-
-
-
 const commands = {
   'setStatus': setStatus,
   'menu': menu,
   'website': website,
   'address': address,
-  'location': location,
+  'location': address,
   'hours': hours
 };
 
