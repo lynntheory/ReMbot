@@ -1,0 +1,6 @@
+{
+  "Prefix": "!",
+  "welcomeChannel": "welcome",
+  "welcomeEnabled": "true",
+  "welcomeMessage": "Greetings {{user}}!"
+}
