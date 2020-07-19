@@ -2,7 +2,16 @@
 const config = require('../config/config.json');
 
 const setStatus = require('./setStatus.js');
-const shagai = require('./shagai.js');
+const address = require('./address.js');
+const hours = require('./hours.js');
+const menu = require('./menu.js');
+const role = require('./role.js');
+const website = require('./website.js');
+
+
+
+
+
 
 const commands = {
   'setStatus': setStatus,
