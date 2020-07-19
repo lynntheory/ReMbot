@@ -1,8 +1,8 @@
 const config = require('../config/config.json');
 
-const roles = {
+const roles = [
   'alerts'
-};
+]
 
 async function role (message) {
   try{
