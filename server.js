@@ -7,8 +7,6 @@ const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION']
 
 const config = require('./config/config.json');
 const cmds = require('./cmds/index.js');
-const initialScanner = require('./scanners/initial.js');
-const secondaryScanner = require('./scanners/secondary.js');
 
 const presence = [
   "for friends",
