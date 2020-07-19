@@ -1,7 +1,7 @@
 const config = require('../config/config.json');
 
 const roles = {
-  'alerts': alerts
+  'alerts'
 };
 
 async function role (message) {
