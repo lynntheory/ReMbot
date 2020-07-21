@@ -14,7 +14,8 @@ const commands = {
   'website': website,
   'address': address,
   'location': address,
-  'hours': hours
+  'hours': hours,
+  'role': role
 };
 
 module.exports.check = function(message) {
