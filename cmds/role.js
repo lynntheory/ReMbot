@@ -2,15 +2,14 @@ const config = require('../config/config.json');
 
 const roles = [
   'alerts'
-]
+];
+var role;
 
 async function role (message) {
   try{
-    let args = message.content.slice(config.Prefix.length).split(" ");
-    if(roles[args[1]] != undefined) {
-      //alerts
-      if (message.content.match('alerts')) {
-        message.member.roles.add(alerts);
+      if (message.content.match(/alerts/i)) {
+        role = message.guild.roles.cache.find(role => role.name === "alerts");
+        message.member.roles.add(role);
         message.reply('Alerts role added.');
       }
     } else {
