@@ -18,7 +18,7 @@ app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
 setInterval(function() {
-    http.get(`https://rememoriesbot.herokuapp.com/`);
+    http.get(`http://rememoriesbot.herokuapp.com/`);
 }, 300000);
 
 client.on('ready', () => {
