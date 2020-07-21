@@ -8,7 +8,7 @@ var role;
 async function role (message) {
   try{
       if (message.content.match(/alerts/i)) {
-        role = message.guild.roles.find(role => role.name === "alerts");
+        role = message.guild.roles.cache.find(role => role.name === "alerts");
         message.member.roles.add(role);
         message.reply('Alerts role added.');
     } else {
