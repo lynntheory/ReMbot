@@ -5,7 +5,7 @@ async function role (message) {
       if (message.content.match(/alerts/i)) {
         let myRole = message.guild.roles.get("733445445262508142");
         let subject = message.member;
-        subject.roles.add(myRole);
+        subject.addRole(myRole);
         message.reply('Alerts role added.');
     } else {
       console.log('This role does not exist!');
